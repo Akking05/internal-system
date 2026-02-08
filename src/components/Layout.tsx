@@ -43,15 +43,18 @@ export const Layout = ({ children, activeTab, setActiveTab }: LayoutProps) => {
   </nav>
 
   {/* Вместо лимита — статус системы */}
-  <div className="m-4 p-4 bg-slate-800/30 rounded-2xl border border-white/5">
-    <div className="flex items-center gap-2 mb-3">
-      <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-      <span className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Сервер: Актау, РК</span>
-    </div>
-    <p className="text-[10px] text-slate-500 leading-relaxed">
-      Данные защищены протоколом AES-256. Резервное копирование: 04:00 AM.
-    </p>
+<div className="m-4 p-4 bg-slate-800/30 rounded-2xl border border-white/5">
+  <div className="flex items-center gap-2 mb-3">
+    {/* Мигающий индикатор "в сети" */}
+    <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+    <span className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">
+      Сервер: Астана, РК
+    </span>
   </div>
+  <p className="text-[10px] text-slate-500 leading-relaxed">
+    Данные защищены протоколом AES-256. Резервное копирование: 04:00 AM.
+  </p>
+</div>
 </aside>
       {/* MAIN CONTENT */}
       <div className="flex-1 ml-64 flex flex-col">
