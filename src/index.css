@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Здесь мы создаем фирменные цвета для нашего проекта */
+  --color-brand-dark: #0F172A;
+  --color-brand-blue: #2563EB;
+  --color-accent: #F59E0B;
+
+  /* Настраиваем скругления для кнопок, чтобы они выглядели "дорого" */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* Базовые настройки для всего сайта */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
