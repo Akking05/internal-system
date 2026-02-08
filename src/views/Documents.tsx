@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FileCheck, Search, Download, Clock } from 'lucide-react';
 
 export const DocumentsView = () => {
